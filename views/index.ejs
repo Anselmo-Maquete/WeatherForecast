@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header class="section header">
+
+        <h1><i class="fas fa-satellite-dish"></i> Weather Forecast In Real Time</h1>
+        <div class="content box">
+            <div class="box-info " style="background-color: rgba(29, 86, 110, 0.9);">
+                <i class="far fa-compass box-icon"></i>  
+                <h2 style="font-size: 2em;"><%= greetingMsg %>,<br> <%= location %></h2>
+                <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Non eius<br> impedit beatae! Corporis cum cumque<br> voluptates in? Reiciendis cumque corrupti<br> ducimus nemo ab dicta<br> blanditiis!</p>
+                <button class="box-btn">More</button>
+            </div>
+        
+            <div class="box-info" style="background-color: rgba(22, 58, 95, 0.9);">
+                <i class="fas fa-temperature-low box-icon"></i> 
+                <h2 style="font-size: 2em;"><%= tempOfDay %> &deg; Celsius</h2>
+                <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Non eius<br> impedit beatae! Corporis cum cumque<br> voluptates in? Reiciendis cumque corrupti<br> ducimus nemo ab dicta<br> blanditiis!</p>
+                <button class="box-btn">More</button>
+            </div>
+        
+            <div class="box-info" style="background-color: rgba(33, 171, 165, 0.9);">
+                <img src="<%= iconUrl %>" alt="iconWeather" style="height: 64px; width: 64px;">
+                <h2 style="font-size: 2em;"> <%= descrptOfDay %></h2>
+                <p>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit. Non eius<br> impedit beatae! Corporis cum cumque<br> voluptates in? Reiciendis cumque corrupti<br> ducimus nemo ab dicta<br> blanditiis!</p>
+                <button class="box-btn">More</button>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="section formulario">
+        <div class="content">
+            <form action="/" class="form-box" method="POST">
+                <input type="search" name="pesquisaLocal" id="" placeholder="Insert Location" autocomplete="off">
+                <button class="box-btn" type="submit"><i class="fas fa-search"></i> Search</button>
+            </form>
+        </div>
+    </section>
+
+
+</body>
+</html>

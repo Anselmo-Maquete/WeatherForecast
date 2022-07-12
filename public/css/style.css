@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #45EBA5 50%, #E4E9FD 50%);
+    min-height: 1000px;
+    
+}
+
+.section{
+    width: 100%;
+    float: left;
+}
+.content{
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+.section.header{
+    padding: 100px 0px; 
+}
+
+
+h1{
+    text-align: center;
+    padding: 60px 0px;
+    color: #163A5F;
+}
+
+.content.box{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box-info{
+    padding: 25px 15px;
+    border-radius: 7px;
+    text-align: center;
+    color: #E4E9FD;
+    margin-bottom: 10px;
+    align-content: center;
+}
+
+.box-icon{
+    margin: 15px;
+    font-size: 25px;
+}
+
+h2,p,button{
+    margin-bottom: 10px;
+}
+
+
+.box-btn{
+    background-color: #fff;
+    padding: 8px 15px;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.form-box{
+    text-align: center;
+}
+input{
+    padding: 8px 15px;
+    border:none;
+    border-radius: 10px;
+}
+
+
+/* Tamanho MOBILE */
+@media (max-width: 768px){
+    .section.header{
+        padding: 50px 0px; 
+    }
+    
+    .section.formulario{
+        margin-top: -20px;
+    }
+}
+
+
+/* #1D566E - 29,86,110
+    #163A5F - 22,58,95
+    #21ABA5 - 33,171,165
+*/
